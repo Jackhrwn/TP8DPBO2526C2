@@ -156,11 +156,13 @@ Catatan:
 ## Dokumentasi
 
 ### CRUD Lecturer
+![CRUD Lecturer](Dokumentasi/CRUD%20Lecturer.mp4)
 
 ### CRUD Course
+![CRUD Course](Dokumentasi/CRUD%20Course.mp4)
 
 ### ON DELETE CASCADE
-
+![On Delete Cascade](Dokumentasi/Mekanisme%20Foreign%20Key.mp4)
 
 
 
