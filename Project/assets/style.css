@@ -1,0 +1,167 @@
+
+/* --------------------------------------------------------------------------
+   Variabel warna dan token desain
+   -------------------------------------------------------------------------- */
+:root {
+    --bg: #F7E9D7;      /* Warna latar halaman */
+    --red: #8E2418;     /* Warna merah utama */
+    --green: #2E6B27;   /* Warna hijau untuk aksen */
+    --cream: #FFF6E6;   /* Warna krem untuk panel dan tombol */
+    --ink: #3A2A20;     /* Warna teks dan garis */
+}
+
+/* --------------------------------------------------------------------------
+   Dasar halaman
+   -------------------------------------------------------------------------- */
+body {
+    background: var(--bg);                              /* Latar belakang halaman */
+    color: var(--ink);                                  /* Warna teks utama */
+    font-family: 'Space Grotesk', system-ui, sans-serif; /* Font utama halaman */
+    display: flex;                                      /* Menyusun konten secara vertikal */
+    flex-direction: column;                             /* Arah konten dari atas ke bawah */
+    min-height: 100vh;                                  /* Minimal setinggi layar */
+    padding-bottom: 100px;                              /* Ruang agar tidak tertutup navigasi bawah */
+}
+
+/* Container utama aplikasi */
+.app {
+    flex: 1 0 auto;                                     /* Mengisi ruang agar credit terdorong ke bawah */
+    max-width: 760px;                                   /* Batas lebar konten */
+}
+
+/* --------------------------------------------------------------------------
+   Area brand dan judul
+   -------------------------------------------------------------------------- */
+.brand {
+    display: flex;                                      /* Menyusun logo dan judul sejajar */
+    align-items: center;                                /* Meratakan secara vertikal */
+    gap: 12px;                                          /* Jarak antara logo dan judul */
+}
+
+.brand h1 {
+    margin: 0;                                          /* Menghilangkan margin bawaan */
+    color: var(--red);                                  /* Warna judul */
+    font-weight: 700;                                   /* Ketebalan judul */
+    font-size: 1.9rem;                                  /* Ukuran judul */
+}
+
+/* --------------------------------------------------------------------------
+   Panel konten
+   -------------------------------------------------------------------------- */
+.panel {
+    background: var(--cream);                           /* Latar panel */
+    border: 2px solid var(--ink);                       /* Garis tepi panel */
+    border-radius: 18px;                                /* Sudut panel membulat */
+    overflow: hidden;                                   /* Memotong isi yang keluar panel */
+}
+
+/* Tabel di dalam panel */
+.panel .table {
+    --bs-table-bg: transparent;                         /* Latar tabel mengikuti panel */
+    color: var(--ink);                                  /* Warna teks tabel */
+}
+
+.panel thead th {
+    color: var(--green);                                /* Warna judul kolom tabel */
+}
+
+/* --------------------------------------------------------------------------
+   Formulir
+   -------------------------------------------------------------------------- */
+.form-title {
+    color: var(--green);                                /* Warna judul form */
+    font-size: 1.4rem;                                  /* Ukuran judul form */
+    font-weight: 700;                                   /* Ketebalan judul form */
+}
+
+label {
+    margin-top: .8rem;                                  /* Jarak atas label */
+    font-weight: 500;                                   /* Ketebalan teks label */
+    font-size: .9rem;                                   /* Ukuran teks label */
+}
+
+.form-control,
+.form-select {
+    border: 2px solid var(--ink);                       /* Garis tepi input dan select */
+    border-radius: 10px;                                /* Sudut input dan select */
+}
+
+/* --------------------------------------------------------------------------
+   Tombol
+   -------------------------------------------------------------------------- */
+.btn-red,
+.btn-cream {
+    font-weight: 700;                                   /* Ketebalan teks tombol */
+    border: 2px solid var(--ink);                       /* Garis tepi tombol */
+    border-radius: 12px;                                /* Sudut tombol membulat */
+    box-shadow: 0 3px 0 rgba(0, 0, 0, .25);           /* Bayangan tombol */
+}
+
+.btn-red {
+    background: var(--red);                             /* Latar tombol merah */
+    color: #fff;                                      /* Warna teks tombol merah */
+}
+
+.btn-red:hover {
+    background: #731c12;                              /* Latar tombol merah saat hover */
+    color: #fff;                                      /* Warna teks saat hover */
+}
+
+.btn-cream {
+    background: var(--cream);                           /* Latar tombol krem */
+    color: var(--ink);                                  /* Warna teks tombol krem */
+}
+
+.btn-cream:hover {
+    background: #f3e3c8;                              /* Latar tombol krem saat hover */
+    color: var(--ink);                                  /* Warna teks saat hover */
+}
+
+.btn-sm {
+    box-shadow: none;                                   /* Menghilangkan bayangan tombol kecil */
+    border-radius: 10px;                                /* Sudut tombol kecil */
+}
+
+/* --------------------------------------------------------------------------
+   Credit pembuat
+   -------------------------------------------------------------------------- */
+.credit {
+    margin: auto 0 0;                                   /* Selalu menempel di bagian bawah halaman */
+    padding-top: 28px;                                  /* Jarak atas dari konten */
+    text-align: center;                                 /* Teks credit di tengah */
+    color: var(--ink);                                  /* Warna teks credit */
+    font-size: .85rem;                                  /* Ukuran teks credit */
+    opacity: .75;                                       /* Membuat teks lebih lembut */
+}
+
+/* --------------------------------------------------------------------------
+   Navigasi bawah
+   -------------------------------------------------------------------------- */
+.bottom-nav {
+    position: fixed;                                    /* Navigasi tetap di layar */
+    left: 50%;                                          /* Posisi horizontal di tengah */
+    bottom: 14px;                                       /* Jarak dari tepi bawah */
+    transform: translateX(-50%);                        /* Menggeser agar tepat di tengah */
+    width: calc(100% - 28px);                           /* Lebar responsif dengan margin */
+    max-width: 420px;                                   /* Batas lebar navigasi */
+    display: flex;                                      /* Menyusun menu secara horizontal */
+    background: var(--cream);                           /* Latar navigasi */
+    border: 2px solid var(--ink);                       /* Garis tepi navigasi */
+    border-radius: 22px;                                /* Sudut navigasi membulat */
+    overflow: hidden;                                   /* Memotong item yang keluar */
+    box-shadow: 0 4px 0 rgba(0, 0, 0, .25);           /* Bayangan navigasi */
+}
+
+.bottom-nav a {
+    flex: 1;                                            /* Membagi ruang menu sama rata */
+    text-align: center;                                 /* Teks menu di tengah */
+    padding: 14px 4px;                                  /* Ruang dalam item menu */
+    text-decoration: none;                              /* Menghilangkan garis bawah */
+    color: var(--ink);                                  /* Warna teks menu */
+    font-weight: 700;                                   /* Ketebalan teks menu */
+}
+
+.bottom-nav a.on {
+    background: var(--red);                             /* Latar menu yang aktif */
+    color: #fff;                                      /* Warna teks menu aktif */
+}
