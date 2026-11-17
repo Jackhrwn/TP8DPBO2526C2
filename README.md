@@ -156,13 +156,11 @@ Catatan:
 
 ## Dokumentasi
 
-Video demonstrasi ditampilkan langsung sebagai GIF animasi di bawah ini. Klik salah satu GIF untuk membuka file MP4 aslinya.
-
 ### CRUD Lecturer
-[![Demo CRUD Lecturer](Dokumentasi/preview/CRUD%20Lecturer.gif)](Dokumentasi/CRUD%20Lecturer.mp4)
+<img width="1000" height="525" alt="CRUD Lecturer" src="https://github.com/user-attachments/assets/177d63de-a9f7-49e1-b153-e041373c7bbb" />
 
 ### CRUD Course
-[![Demo CRUD Course](Dokumentasi/preview/CRUD%20Course.gif)](Dokumentasi/CRUD%20Course.mp4)
+<img width="900" height="472" alt="CRUD Course" src="https://github.com/user-attachments/assets/2d54dd29-b1a9-4cfd-a984-6a07313a5838" />
 
 ### ON DELETE CASCADE
-[![Demo Mekanisme Foreign Key](Dokumentasi/preview/Mekanisme%20Foreign%20Key.gif)](Dokumentasi/Mekanisme%20Foreign%20Key.mp4)
+<img width="1000" height="525" alt="Mekanisme Foreign Key" src="https://github.com/user-attachments/assets/d99cbc23-3a9d-44d9-8042-21fa84d4c6bc" />
