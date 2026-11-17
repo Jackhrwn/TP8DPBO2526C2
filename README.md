@@ -55,9 +55,9 @@ TP8DPBO2526C2/
 ├── README.md
 ├── tp_mvc25.sql
 ├── Dokumentasi/
-│   ├── CRUD Course.mp4
-│   ├── CRUD Lecturer.mp4
-│   └── Mekanisme Foreign Key.mp4
+│   ├── CRUD Course.gif
+│   ├── CRUD Lecturer.gif
+│   └── Mekanisme Foreign Key.gif
 │
 └── Project/
     ├── index.php
@@ -91,6 +91,7 @@ Keterangan setiap file dan folder:
 | `README.md` | Dokumentasi utama proyek |
 | `tp_mvc25.sql` | Skrip pembuatan database, tabel `lecturers`, tabel `courses`, serta 5 data awal untuk masing-masing tabel |
 | `Dokumentasi/` | Tempat menyimpan screen recording hasil program |
+| `Dokumentasi/preview/` | GIF animasi dari video dokumentasi agar dapat tampil langsung di README GitHub |
 | `Project/index.php` | Front controller: memuat dependensi, memvalidasi `page` dan `action`, lalu memanggil controller |
 | `Project/connection.php` | Membuat koneksi database MySQLi |
 | `Project/controllers/` | Berisi controller yang mengatur alur request |
@@ -155,14 +156,13 @@ Catatan:
 
 ## Dokumentasi
 
+Video demonstrasi ditampilkan langsung sebagai GIF animasi di bawah ini. Klik salah satu GIF untuk membuka file MP4 aslinya.
+
 ### CRUD Lecturer
-![CRUD Lecturer](Dokumentasi/CRUD%20Lecturer.mp4)
+[![Demo CRUD Lecturer](Dokumentasi/preview/CRUD%20Lecturer.gif)](Dokumentasi/CRUD%20Lecturer.mp4)
 
 ### CRUD Course
-![CRUD Course](Dokumentasi/CRUD%20Course.mp4)
+[![Demo CRUD Course](Dokumentasi/preview/CRUD%20Course.gif)](Dokumentasi/CRUD%20Course.mp4)
 
 ### ON DELETE CASCADE
-![On Delete Cascade](Dokumentasi/Mekanisme%20Foreign%20Key.mp4)
-
-
-
+[![Demo Mekanisme Foreign Key](Dokumentasi/preview/Mekanisme%20Foreign%20Key.gif)](Dokumentasi/Mekanisme%20Foreign%20Key.mp4)
